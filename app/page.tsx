@@ -66,6 +66,64 @@ export default function Home() {
             </Link>
           </div>
         </div>
+<div className="hidden md:flex w-2/5 flex-col gap-1 justify-center text-lg text-gray-300">
+          <p>
+            <FontAwesomeIcon
+              className="text-[#15B8AE] px-2"
+              icon={faCircleCheck}
+            />{" "}
+            Find over 200+ Jobs Opportunity in our Service
+          </p>
+          <p>
+            <FontAwesomeIcon
+              className="text-[#15B8AE] px-2"
+              icon={faCircleCheck}
+            />{" "}
+            Leveling Up new Skill to prepare you to get a Job
+          </p>
+          <p>
+            <FontAwesomeIcon
+              className="text-[#15B8AE] px-2"
+              icon={faCircleCheck}
+            />{" "}
+            Maintain The Progression of Every Talent
+          </p>
+          <p>
+            <FontAwesomeIcon
+              className="text-[#15B8AE] px-2"
+              icon={faCircleCheck}
+            />{" "}
+            Connection Over 90+ Company
+          </p>
+        </div>
+      </section>
+
+      <section
+        className="flex bg-[#0B0F19] text-white flex-col xl:flex-row h-[250px] px-4"
+        style={{
+          backgroundImage:
+            "radial-gradient(at bottom right, #15B8AE -37%, #15B8AE00 37%)",
+        }}
+      >
+        <div className="flex items-center p-6 xl:w-1/2 mt-24">
+          <Image
+            src="/images/home/slider1-scaled.jpg"
+            alt="About Oprax IT Services"
+            height={600}
+            width={900}
+            style={{ contain: "strict" }}
+          />
+        </div>
+        <div className="flex items-center p-6 xl:w-1/2">
+          <Image
+            className="translate-y-32"
+            src="/images/home/recruitment-consulting-venn-diagram-1536x1388.jpg"
+            alt="About Oprax IT Services"
+            height={600}
+            width={900}
+            style={{ contain: "strict" }}
+          />
+        </div>
       </section>
 
       {/* About Section */}
