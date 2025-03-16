@@ -152,7 +152,7 @@ export default function Services() {
               icon={faCircleChevronRight}
             />
             <Link
-              href="/"
+              href="/services"
               className="text-white font-normal hover:text-[#15B8AE]"
             >
               Services

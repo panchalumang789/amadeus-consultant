@@ -34,7 +34,7 @@ export default function AboutUs() {
               icon={faCircleChevronRight}
             />
             <Link
-              href="/"
+              href="/about-us"
               className="text-white font-normal hover:text-[#15B8AE]"
             >
               About Us

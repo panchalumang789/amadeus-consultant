@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Keyframes for the smooth underline animation */
+@keyframes curveAnimation {
+  0% {
+    transform: scaleX(0) translateX(0%);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleX(1) translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0) translateX(0%);
+    opacity: 0;
+  }
+}
+
+/* Apply animation to the span */
+.curve-underline {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  animation: curveAnimation 10s cubic-bezier(0.81, 0.03, 0, 1.04) infinite;
+}
