@@ -46,117 +46,219 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative bg-[#0B0F19] text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl">
-            <p className="text-[#15B8AE] mb-4">
-              Launch Your Success: Find Jobs or Talent | 200+ With Oprax IT
-              Services
-            </p>
-            <h1 className="text-5xl font-bold mb-6">
-              Becomes The True
-              <br />
-              Hero With Our Agency
-            </h1>
-            <Link
-              href="/about"
-              className="inline-block bg-[#00D2C7] text-white px-9 py-5 hover:scale-90 duration-500 transition"
-            >
-              About Us
-            </Link>
+      <section className="relative bg-[#0B0F19] text-white ">
+        <div className="container mx-auto flex flex-col gap-8 xl:gap-0 px- 4 py-14 md:px-20 md:py-20 xl:px-32 xl:flex-row">
+          <div className="w-full xl:w-3/5 xs:mx-auto px-4">
+            <div className="max-w-3xl text-center xl:text-left">
+              <p className="text-[#15B8AE] mb-4 text-xl font-semibold -tracking-normal">
+                Unlock Your Success: Find Jobs or Talent ! 2024 With Oprax IT
+                Services
+              </p>
+              <h1 className="text-5xl xl:text-6xl font-bold text-left mb-6">
+                Becomes The True
+                <br />
+                <span className="relative">
+                  Hero
+                  <span className="curve-underline absolute left-0 bottom-0 w-full h-1 bg-[#00D2C7] rounded-md transform scale-x-100"></span>
+                </span>
+                {" With Our Agency"}
+              </h1>
+              <Link
+                href="/about"
+                className="inline-block bg-[#00D2C7] text-white px-9 py-5 hover:scale-90 duration-500 transition"
+              >
+                About Us
+              </Link>
+            </div>
           </div>
-        </div>
-<div className="hidden md:flex w-2/5 flex-col gap-1 justify-center text-lg text-gray-300">
-          <p>
-            <FontAwesomeIcon
-              className="text-[#15B8AE] px-2"
-              icon={faCircleCheck}
-            />{" "}
-            Find over 200+ Jobs Opportunity in our Service
-          </p>
-          <p>
-            <FontAwesomeIcon
-              className="text-[#15B8AE] px-2"
-              icon={faCircleCheck}
-            />{" "}
-            Leveling Up new Skill to prepare you to get a Job
-          </p>
-          <p>
-            <FontAwesomeIcon
-              className="text-[#15B8AE] px-2"
-              icon={faCircleCheck}
-            />{" "}
-            Maintain The Progression of Every Talent
-          </p>
-          <p>
-            <FontAwesomeIcon
-              className="text-[#15B8AE] px-2"
-              icon={faCircleCheck}
-            />{" "}
-            Connection Over 90+ Company
-          </p>
+          <div className="hidden md:flex w-full xl:w-2/5 flex-col gap-1 justify-center text-lg text-gray-300">
+            <p>
+              <FontAwesomeIcon
+                className="text-[#15B8AE] px-2"
+                icon={faCircleCheck}
+              />{" "}
+              Find over 200+ Jobs Opportunity in our Service
+            </p>
+            <p>
+              <FontAwesomeIcon
+                className="text-[#15B8AE] px-2"
+                icon={faCircleCheck}
+              />{" "}
+              Leveling Up new Skill to prepare you to get a Job
+            </p>
+            <p>
+              <FontAwesomeIcon
+                className="text-[#15B8AE] px-2"
+                icon={faCircleCheck}
+              />{" "}
+              Maintain The Progression of Every Talent
+            </p>
+            <p>
+              <FontAwesomeIcon
+                className="text-[#15B8AE] px-2"
+                icon={faCircleCheck}
+              />{" "}
+              Connection Over 90+ Company
+            </p>
+          </div>
         </div>
       </section>
 
       <section
-        className="flex bg-[#0B0F19] text-white flex-col xl:flex-row h-[250px] px-4"
+        className="bg-[#0B0F19] text-white h-[250px]"
         style={{
           backgroundImage:
             "radial-gradient(at bottom right, #15B8AE -37%, #15B8AE00 37%)",
         }}
       >
-        <div className="flex items-center p-6 xl:w-1/2 mt-24">
-          <Image
-            src="/images/home/slider1-scaled.jpg"
-            alt="About Oprax IT Services"
-            height={600}
-            width={900}
-            style={{ contain: "strict" }}
-          />
-        </div>
-        <div className="flex items-center p-6 xl:w-1/2">
-          <Image
-            className="translate-y-32"
-            src="/images/home/recruitment-consulting-venn-diagram-1536x1388.jpg"
-            alt="About Oprax IT Services"
-            height={600}
-            width={900}
-            style={{ contain: "strict" }}
-          />
+        <div className="flex container flex-col md:flex-row px-4 lg:px-20 xl:px-32 mx-auto">
+          <div className="flex items-center p-3 md:p-6 xl:w-1/2">
+            <Image
+              src="/images/home/slider1-scaled.jpg"
+              alt="About Oprax IT Services"
+              height={600}
+              width={900}
+              style={{ contain: "strict" }}
+            />
+          </div>
+          <div className="flex items-center p-3 md:p-6 xl:w-1/2">
+            <Image
+              className="xl:translate-y-32"
+              src="/images/home/recruitment-consulting-venn-diagram-1536x1388.jpg"
+              alt="About Oprax IT Services"
+              height={600}
+              width={900}
+              style={{ contain: "strict" }}
+            />
+          </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <p className="text-[#15B8AE] mb-2">About Oprax IT Services</p>
-            <h2 className="text-3xl font-bold mb-6">
-              Finding The Jobs That You
-              <br />
-              Have Been Dreaming
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="flex items-center gap-4">
-              <div className="bg-[#00D2C7] p-4 rounded-lg">
-                <svg className="w-6 h-6 text-white" /* Add icon SVG here */ />
-              </div>
-              <div>
-                <h3 className="font-bold mb-2">Fast Recognition</h3>
-                <p className="text-gray-600">Quick placement process</p>
+      <section className="bg-white pt-[250px] md:pt-0 xl:pt-[350px]">
+        <div className="w-full max-w-7xl mx-auto px-4 py-8 md:py-16">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 md:gap-0">
+            {/* Left side - Images */}
+            <div className="relative px-4">
+              <div className="grid grid-cols-1 gap-4">
+                <div className="hidden md:block relative w-full h-64 md:h-72">
+                  <Image
+                    src="/images/home/happy-young-business-people-standing-in-the-office-and-looking-forward-to-success-in-the-office.jpg"
+                    alt="Team collaborating in office"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-4 mx-auto">
+                  <div className="relative w-80 xl:w-64 h-[420px] xl:h-96 z-2 md:translate-x-6 md:-translate-y-16 border-[20px] border-white">
+                    <Image
+                      src="/images/home/african-manager-working-at-office-1024x1536.jpg"
+                      alt="Professional at desk"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="hidden md:block relative w-full h-64">
+                    <div className="relative w-72 h-96 z-2 -translate-x-3 -translate-y-4 border-[20px] border-white">
+                      <Image
+                        src="/images/home/young-couple-in-office.jpg"
+                        alt="Team members working together"
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 flex flex-col items-center justify-end bg-white/10 p-6 text-center">
+                        <div className="bg-white px-9 py-2 translate-y-6">
+                          <h3 className="text-3xl text-black font-bold mt-2 bg-white">
+                            150
+                            <span className="text-teal-500 text-xl"> + </span>
+                          </h3>
+                          <p className="text-gray-600 text-sm translate-y-2">
+                            Job Recruitment
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="flex items-center gap-4">
-              <div className="bg-[#00D2C7] p-4 rounded-lg">
-                <svg className="w-6 h-6 text-white" /* Add icon SVG here */ />
+
+            {/* Right side - Content */}
+            <div className="flex flex-col justify-center">
+              <div className="text-teal-500 font-semibold text-lg mb-2">
+                About Oprax IT Services
               </div>
-              <div>
-                <h3 className="font-bold mb-2">Job For Everyone</h3>
-                <p className="text-gray-600">
-                  Opportunities for all skill levels
-                </p>
+              <h1 className="text-4xl text-black md:text-5xl font-bold mb-6 tracking-tighter">
+                Finding The Jobs That You Have Been Dreaming
+              </h1>
+              <p className="text-gray-400 mb-10">
+                Navigating the realm of bench sales to land your dream job
+                requires a strategic approach. Tailor your resume to highlight
+                relevant skills, actively engage with bench sales platforms, and
+                foster connections within the industry. Stay persistent in
+                showcasing your strengths and networking to unlock the doors to
+                the ideal bench sales opportunity you&apos;ve been dreaming of
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
+                <div className="flex flex-col items-start">
+                  <div className="bg-teal-500 p-4 mb-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-white"
+                    >
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <path d="M14 2v6h6"></path>
+                      <circle cx="12" cy="14" r="4"></circle>
+                      <path d="M12 10v8"></path>
+                      <path d="M8 14h8"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-3xl text-black font-bold mb-2 tracking-tighter">
+                    Fast Recognition
+                  </h3>
+                </div>
+                <div className="flex flex-col items-start">
+                  <div className="bg-teal-500 p-4 mb-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-white"
+                    >
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <h3 className="text-3xl text-black font-bold mb-2 tracking-tighter">
+                    Job For Everyone
+                  </h3>
+                </div>
+              </div>
+
+              <div className="text-white text-center md:text-left w-full hover:scale-90 duration-500">
+                <Link
+                  href="/about-us"
+                  className="bg-teal-500 text-white px-4 xl:px-9 py-3 xl:py-5 text-[16px] w-max font-medium"
+                >
+                  More About Us
+                </Link>
               </div>
             </div>
           </div>
@@ -375,7 +477,7 @@ export default function Home() {
       {/* Job Search Section */}
       <section className="py-8 md:py-12 border-t bg-white border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex flex-col xl:flex-row items-center justify-between gap-6">
             <p className="text-gray-600 text-center md:text-left">
               Are you seeking employment? Contact us now for guaranteed
               placement with Oprax IT Services.

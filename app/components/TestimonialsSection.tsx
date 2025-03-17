@@ -45,14 +45,16 @@ const testimonials = [
 export default function TestimonialsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(1);
 
-  const totalSlides = Math.ceil(testimonials.length / (isMobile ? 1 : 3));
+  const totalSlides = Math.ceil(testimonials.length / isMobile);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768);
+        if (window.innerWidth < 768) setIsMobile(1);
+        else if (window.innerWidth < 1024) setIsMobile(2);
+        else setIsMobile(3);
       };
 
       window.addEventListener("resize", handleResize);
@@ -74,8 +76,8 @@ export default function TestimonialsSection() {
   }, [isAutoPlaying, totalSlides]);
 
   const getCurrentTestimonials = () => {
-    const start = currentSlide * (isMobile ? 1 : 3);
-    return testimonials.slice(start, start + (isMobile ? 1 : 3));
+    const start = currentSlide * isMobile;
+    return testimonials.slice(start, start + isMobile);
   };
 
   const handleDragEnd = (e: Event, info: PanInfo) => {
@@ -108,7 +110,7 @@ export default function TestimonialsSection() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-1 md:grid-cols-3 gap-6"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               onDragEnd={handleDragEnd}
