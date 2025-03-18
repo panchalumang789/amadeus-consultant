@@ -1,12 +1,16 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+const emailId = process.env.NEXT_PUBLIC_EMAIL_USER;
+const pass = process.env.NEXT_PUBLIC_EMAIL_PASSWORD;
+
 export async function POST(request: Request) {
   try {
-    const { name, email, phone, subject, message } = await request.json();
+    const { firstName, lastName, email, phone, subject, message } =
+      await request.json();
 
     // Validate form data
-    if (!name || !email || !subject || !message) {
+    if (!firstName || !lastName || !email || !subject || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
@@ -15,22 +19,23 @@ export async function POST(request: Request) {
 
     // Configure email transporter (replace with your SMTP settings)
     const transporter = nodemailer.createTransport({
+      service: "gmail",
       host: process.env.EMAIL_HOST,
       port: Number(process.env.EMAIL_PORT) || 587,
       secure: process.env.EMAIL_SECURE === "true",
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
+        user: emailId,
+        pass,
       },
     });
 
     // Email content
     const mailOptions = {
-      from: process.env.EMAIL_FROM,
-      to: process.env.EMAIL_TO,
+      from: emailId,
+      to: emailId,
       subject: `Contact Form: ${subject}`,
       text: `
-        Name: ${name}
+        Name: ${firstName} ${lastName}
         Email: ${email}
         Phone: ${phone || "Not provided"}
         
@@ -39,7 +44,7 @@ export async function POST(request: Request) {
       `,
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Name:</strong> ${firstName} ${lastName}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
         <p><strong>Subject:</strong> ${subject}</p>

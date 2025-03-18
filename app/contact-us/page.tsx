@@ -60,7 +60,7 @@ export default function ContactUs() {
             <div className="lg:w-1/2">
               <ContactForm />
             </div>
-            <div className="lg:w-1/2 ml-14">
+            <div className="lg:w-1/2 p-6 md:ml-14">
               <h4 className="text-xl font-semibold text-[#15B8AE] mb-6">
                 Contact Us
               </h4>

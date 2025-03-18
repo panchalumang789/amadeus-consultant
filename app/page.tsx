@@ -255,7 +255,7 @@ export default function Home() {
               <div className="text-white text-center md:text-left w-full hover:scale-90 duration-500">
                 <Link
                   href="/about-us"
-                  className="bg-teal-500 text-white px-4 xl:px-9 py-3 xl:py-5 text-[16px] w-max font-medium"
+                  className="bg-teal-500 text-white px-4 xl:px-9 py-3 xl:py-5 text-[16px] w-full font-medium"
                 >
                   More About Us
                 </Link>
