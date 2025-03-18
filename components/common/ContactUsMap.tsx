@@ -24,6 +24,7 @@ export default function ContactMap() {
   const position: [number, number] = [40.7128, -74.006]; // New York City coordinates
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     if (mapRef.current && !mapInstanceRef.current) {
       fixLeafletIcon();
 

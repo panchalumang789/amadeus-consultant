@@ -15,6 +15,7 @@ type FormData = {
 export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -24,15 +25,31 @@ export default function ContactForm() {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    console.log(data);
     setIsSubmitting(true);
+    setSubmitError(null);
+
     try {
-      // Add your form submission logic here
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate API call
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Failed to send message");
+      }
+
       setSubmitSuccess(true);
       reset();
     } catch (error) {
       console.error("Error submitting form:", error);
+      setSubmitError(
+        error instanceof Error ? error.message : "An unexpected error occurred"
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -197,6 +214,12 @@ export default function ContactForm() {
       {submitSuccess && (
         <div className="mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
           Thank you for your message! We&apos;ll get back to you soon.
+        </div>
+      )}
+
+      {submitError && (
+        <div className="mt-4 p-4 bg-red-100 text-red-700 rounded-lg">
+          Error: {submitError}
         </div>
       )}
     </form>

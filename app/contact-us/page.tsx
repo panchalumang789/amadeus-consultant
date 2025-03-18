@@ -1,5 +1,5 @@
+"use client";
 import ContactForm from "@/components/common/ContactForm";
-import ContactUsMap from "@/components/common/ContactUsMap";
 import {
   faBuilding,
   faCircleChevronRight,
@@ -8,8 +8,14 @@ import {
   faPhoneVolume,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
+
+const ContactUsMap = dynamic(() => import("@/components/common/ContactUsMap"), {
+  ssr: false,
+  loading: () => <p>Loading...</p>,
+});
 
 export default function ContactUs() {
   return (
