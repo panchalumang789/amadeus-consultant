@@ -24,12 +24,13 @@ export default function PrivacyPolicy() {
             <h2 className="text-lg font-semibold text-[#0B0B0B] mb-4">
               1. Introduction
             </h2>
+            {/* TODO: Update live site url */}
             <p className="text-[15px] leading-relaxed text-gray-600">
-              Welcome to Oprax IT Services LLC. We are committed to protecting
+              Welcome to Amadeus Consultant LLC. We are committed to protecting
               your privacy and ensuring that your personal information is
               handled in a safe and responsible manner. This Privacy Policy
               outlines how we collect, use, and protect your information when
-              you visit our website. https://opraxitservices.com/
+              you visit our website. https://amadeusconsultant.com/
             </p>
           </section>
 
@@ -126,7 +127,7 @@ export default function PrivacyPolicy() {
             <p className="text-gray-700">
               You have the right to access, correct, or delete your personal
               information. If you wish to exercise these rights, please contact
-              us at info@opraxitservices.com.
+              us at info@amadeusconsultant.com.
             </p>
           </section>
 
@@ -151,8 +152,8 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy or our
               practices,
               <br />
-              please contact us at Oprax IT Services LLC, Mr. Arjun Pandey,
-              Email: info@opraxitservices.com,
+              please contact us at Amadeus Consultant LLC, Mr. Arjun Pandey,
+              Email: info@amadeusconsultant.com,
               <br />
               Phone: +1 217 335 6775.
             </p>

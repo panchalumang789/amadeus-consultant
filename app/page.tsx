@@ -46,76 +46,78 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative bg-[#0B0F19] text-white ">
+      <section className="relative bg-black text-white ">
         <div className="container mx-auto flex flex-col gap-8 xl:gap-0 px- 4 py-14 md:px-20 md:py-20 xl:px-32 xl:flex-row">
           <div className="w-full xl:w-3/5 xs:mx-auto px-4">
             <div className="max-w-3xl text-center xl:text-left">
-              <p className="text-[#15B8AE] mb-4 text-xl font-semibold -tracking-normal">
-                Unlock Your Success: Find Jobs or Talent ! 2024 With Oprax IT
-                Services
+              <p className="text-[#60a8f3] mb-4 text-xl font-semibold -tracking-normal">
+                Find your dream job. Top Talents. Everything at One Place.
               </p>
               <h1 className="text-5xl xl:text-6xl font-bold text-left mb-6">
-                Becomes The True
-                <br />
-                <span className="relative">
-                  Hero
-                  <span className="curve-underline absolute left-0 bottom-0 w-full h-1 bg-[#00D2C7] rounded-md transform scale-x-100"></span>
-                </span>
-                {" With Our Agency"}
+                Your Trusted Staffing Partners
               </h1>
-              <Link
-                href="/about"
-                className="inline-block bg-[#00D2C7] text-white px-9 py-5 hover:scale-90 duration-500 transition"
-              >
-                About Us
-              </Link>
+              <div>
+                <p className="text-xl">
+                  Staffing Professors help connect companies and job applicant
+                  with the right jobs in finance, law, and technology. Get
+                  started by contacting us today.
+                </p>
+              </div>
             </div>
           </div>
           <div className="hidden md:flex w-full xl:w-2/5 flex-col gap-1 justify-center text-lg text-gray-300">
             <p>
               <FontAwesomeIcon
-                className="text-[#15B8AE] px-2"
+                className="text-white px-2"
                 icon={faCircleCheck}
               />{" "}
               Find over 200+ Jobs Opportunity in our Service
             </p>
             <p>
               <FontAwesomeIcon
-                className="text-[#15B8AE] px-2"
+                className="text-white px-2"
                 icon={faCircleCheck}
               />{" "}
               Leveling Up new Skill to prepare you to get a Job
             </p>
             <p>
               <FontAwesomeIcon
-                className="text-[#15B8AE] px-2"
+                className="text-white px-2"
                 icon={faCircleCheck}
               />{" "}
               Maintain The Progression of Every Talent
             </p>
             <p>
               <FontAwesomeIcon
-                className="text-[#15B8AE] px-2"
+                className="text-white px-2"
                 icon={faCircleCheck}
               />{" "}
               Connection Over 90+ Company
             </p>
+            <div className="mt-10 flex items-center justify-center">
+              <Link
+                href="/about"
+                className="inline-block bg-[#60a8f3] text-white px-9 py-5 hover:scale-90 duration-500 transition"
+              >
+                About Us
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       <section
-        className="bg-[#0B0F19] text-white h-[250px]"
+        className="bg-black text-white h-[250px]"
         style={{
           backgroundImage:
-            "radial-gradient(at bottom right, #15B8AE -37%, #15B8AE00 37%)",
+            "radial-gradient(at bottom right, #60a8f3 -37%, #60a8f300 37%)",
         }}
       >
         <div className="flex container flex-col md:flex-row px-4 lg:px-20 xl:px-32 mx-auto">
           <div className="flex items-center p-3 md:p-6 xl:w-1/2">
             <Image
               src="/images/home/slider1-scaled.jpg"
-              alt="About Oprax IT Services"
+              alt="About Amadeus Consultant"
               height={600}
               width={900}
               style={{ contain: "strict" }}
@@ -125,7 +127,7 @@ export default function Home() {
             <Image
               className="xl:translate-y-32"
               src="/images/home/recruitment-consulting-venn-diagram-1536x1388.jpg"
-              alt="About Oprax IT Services"
+              alt="About Amadeus Consultant"
               height={600}
               width={900}
               style={{ contain: "strict" }}
@@ -186,7 +188,7 @@ export default function Home() {
             {/* Right side - Content */}
             <div className="flex flex-col justify-center">
               <div className="text-teal-500 font-semibold text-lg mb-2">
-                About Oprax IT Services
+                About Amadeus Consultant
               </div>
               <h1 className="text-4xl text-black md:text-5xl font-bold mb-6 tracking-tighter">
                 Finding The Jobs That You Have Been Dreaming
@@ -202,7 +204,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
                 <div className="flex flex-col items-start">
-                  <div className="bg-teal-500 p-4 mb-4">
+                  <div className="bg-[#60a8f3] p-4 mb-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -227,7 +229,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <div className="flex flex-col items-start">
-                  <div className="bg-teal-500 p-4 mb-4">
+                  <div className="bg-[#60a8f3] p-4 mb-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -255,7 +257,7 @@ export default function Home() {
               <div className="text-white text-center md:text-left w-full md:w-max hover:scale-90 duration-500">
                 <Link
                   href="/about-us"
-                  className="bg-teal-500 text-white px-4 xl:px-9 py-3 xl:py-5 text-[16px] w-full font-medium"
+                  className="bg-[#60a8f3] text-white px-4 xl:px-9 py-3 xl:py-5 text-[16px] w-full font-medium"
                 >
                   More About Us
                 </Link>
@@ -266,18 +268,18 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="flex bg-[#0B0F19] text-white flex-col xl:flex-row">
+      <section className="flex bg-black text-white flex-col xl:flex-row">
         <div
           className="container flex items-center mx-auto p-8 md:px-16 lg:px-28 md:py-10 lg:py-20 xl:w-1/2"
           style={{
             backgroundImage:
-              "radial-gradient(at bottom right, #15B8AE -37%, #15B8AE00 37%)",
+              "radial-gradient(at bottom right, #60a8f3 -37%, #60a8f300 37%)",
           }}
         >
           <div className="max-w-6xl mx-auto">
             <div className="mb-16">
-              <p className="text-[#15B8AE] text-lg font-semibold mb-4">
-                Why Choose Oprax IT Solution
+              <p className="text-[#60a8f3] text-lg font-semibold mb-4">
+                Why Choose Amadeus Consultant
               </p>
               <h2 className="text-4xl font-bold">
                 Giving The Job
@@ -287,10 +289,10 @@ export default function Home() {
                 With Your Profile
               </h2>
               <p className="text-gray-300 text-md mt-6 max-w-2xl">
-                At Oprax IT Services, we bring a fresh perspective to the
+                At Amadeus Consultant, we bring a fresh perspective to the
                 industry, blending innovation with personalized service. Our
                 dedicated team is committed to matching exceptional talent with
-                cutting-edge companies, ensuring mutual success. Choose Oprax
+                cutting-edge companies, ensuring mutual success. Choose Amadeus
                 for a dynamic partnership that transforms aspirations into
                 achievements, as we embark on this journey of growth and
                 excellence together. Unlock Your Success: Find Jobs or Talent !
@@ -309,7 +311,7 @@ export default function Home() {
               >
                 <div className="flex flex-col h-full">
                   <div className="md:mb-8">
-                    <div className="bg-[#15B8AE] inline-block p-4 rounded-xs mb-3 md:mb-6">
+                    <div className="bg-[#60a8f3] inline-block p-4 rounded-xs mb-3 md:mb-6">
                       <FontAwesomeIcon
                         className="text-white text-4xl"
                         icon={faUsersLine}
@@ -338,7 +340,7 @@ export default function Home() {
                   viewport={{ once: true }}
                 >
                   <div className="md:mb-8">
-                    <div className="bg-[#15B8AE] inline-block p-4 rounded-xs mb-3 md:mb-6">
+                    <div className="bg-[#60a8f3] inline-block p-4 rounded-xs mb-3 md:mb-6">
                       <FontAwesomeIcon
                         className="text-white text-4xl"
                         icon={faChartLine}
@@ -354,13 +356,13 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12">
               <Link
                 href="/contact-us"
-                className="bg-[#15B8AE] text-white w-max px-5 xl:px-10 py-3 xl:py-5 text-lg font-medium hover:scale-90 duration-500"
+                className="bg-[#60a8f3] text-white w-max px-5 xl:px-10 py-3 xl:py-5 text-lg font-medium hover:scale-90 duration-500"
               >
                 Start Consultation
               </Link>
               <Link
                 href="/about-us"
-                className="text-white hover:text-[#15B8AE] flex gap-2 items-center hover:mb-4 font-semibold duration-500"
+                className="text-white hover:text-[#60a8f3] flex gap-2 items-center hover:mb-4 font-semibold duration-500"
               >
                 Learn more about us
                 <FontAwesomeIcon
@@ -374,7 +376,7 @@ export default function Home() {
         <div className="xl:w-1/2 h-[calc(100vh-200px)] md:h-[calc(100vh-600px)] lg:h-[calc(100vh-900px)] xl:h-screen relative">
           <Image
             src="/images/home/why-choose-us.jpg"
-            alt="About Oprax IT Services"
+            alt="About Amadeus Consultant"
             fill
             style={{ objectFit: "cover" }}
           />
@@ -399,7 +401,7 @@ export default function Home() {
                     cy="48"
                   />
                   <circle
-                    className="text-[#15B8AE]"
+                    className="text-[#60a8f3]"
                     strokeWidth="5"
                     strokeLinecap="round"
                     stroke="currentColor"
@@ -420,7 +422,7 @@ export default function Home() {
                   Expert Team
                 </h4>
                 <p className="text-gray-400">
-                  Oprax excels in bench sales, ensuring top-notch talent
+                  Amadeus excels in bench sales, ensuring top-notch talent
                   acquisition
                 </p>
               </div>
@@ -445,7 +447,7 @@ export default function Home() {
                     cy="48"
                   />
                   <circle
-                    className="text-[#15B8AE]"
+                    className="text-[#60a8f3]"
                     strokeWidth="5"
                     strokeLinecap="round"
                     stroke="currentColor"
@@ -466,7 +468,7 @@ export default function Home() {
                   Best Service
                 </h4>
                 <p className="text-gray-400">
-                  Oprax delivers the best services, guaranteed.
+                  Amadeus delivers the best services, guaranteed.
                 </p>
               </div>
             </motion.div>
@@ -480,12 +482,12 @@ export default function Home() {
           <div className="flex flex-col xl:flex-row items-center justify-between gap-6">
             <p className="text-gray-600 text-center md:text-left">
               Are you seeking employment? Contact us now for guaranteed
-              placement with Oprax IT Services.
+              placement with Amadeus Consultant.
             </p>
             <div className="flex flex-row items-center gap-12">
               <Link
                 href="/contact-us"
-                className="bg-[#15B8AE] text-white px-5 xl:px-10 py-3 xl:py-5 text-[16px] font-medium hover:scale-90 duration-500"
+                className="bg-[#60a8f3] text-white px-5 xl:px-10 py-3 xl:py-5 text-[16px] font-medium hover:scale-90 duration-500"
               >
                 Search a Job
               </Link>
@@ -494,7 +496,7 @@ export default function Home() {
                 className="flex items-center gap-3 text-black transition duration-300"
               >
                 <FontAwesomeIcon
-                  className="p-4 text-xl bg-black text-white rounded-full"
+                  className="p-4 text-xl bg-[#60a8f3] text-white rounded-full"
                   icon={faPhone}
                 />
                 <span className="font-medium">(217) 335-6775</span>

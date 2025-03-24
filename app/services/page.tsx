@@ -28,33 +28,33 @@ const services: Service[] = [
   {
     title: "Staffing Services",
     description:
-      "Opraxit Services offers premier staffing solutions across the USA, seamlessly matching top talent with leading companies. With our commitment to excellence, we ensure mutual success for candidates and businesses alike. Trust us for the best-in-class staffing experience.",
+      "Amadeus Consultant offers premier staffing solutions across the USA, seamlessly matching top talent with leading companies. With our commitment to excellence, we ensure mutual success for candidates and businesses alike. Trust us for the best-in-class staffing experience.",
     image: (
-      <FontAwesomeIcon className="text-[#15B8AE] text-3xl" icon={faUsers} />
+      <FontAwesomeIcon className="text-[#60a8f3] text-3xl" icon={faUsers} />
     ),
   },
   {
     title: "Administrative & Accounting Services",
     description:
-      "Opraxit Services provides exceptional administrative and accounting solutions tailored to your business needs. From streamlining operations to ensuring financial efficiency, our expert team delivers unmatched support. Trust Opraxit for seamless administrative and accounting services that drive your success.",
+      "Amadeus Consultant provides exceptional administrative and accounting solutions tailored to your business needs. From streamlining operations to ensuring financial efficiency, our expert team delivers unmatched support. Trust Amadeus for seamless administrative and accounting services that drive your success.",
     image: (
-      <FontAwesomeIcon className="text-[#15B8AE] text-3xl" icon={faGears} />
+      <FontAwesomeIcon className="text-[#60a8f3] text-3xl" icon={faGears} />
     ),
   },
   {
     title: "Design Engineering Services",
     description:
-      "Experience excellence with Opraxit Services’ bespoke Design Engineering solutions. Our forward-thinking team blends creativity and technical prowess to deliver unparalleled results. Elevate your projects with our innovative approach to design engineering, setting new standards of excellence in the industry.",
+      "Experience excellence with Amadeus Consultant’ bespoke Design Engineering solutions. Our forward-thinking team blends creativity and technical prowess to deliver unparalleled results. Elevate your projects with our innovative approach to design engineering, setting new standards of excellence in the industry.",
     image: (
-      <FontAwesomeIcon className="text-[#15B8AE] text-3xl" icon={faPalette} />
+      <FontAwesomeIcon className="text-[#60a8f3] text-3xl" icon={faPalette} />
     ),
   },
   {
     title: "Digital Marketing Services",
     description:
-      "Discover the power of strategic digital marketing with Opraxit Services. Our data-driven approach and creative expertise converge to amplify your online presence and drive tangible results. Trust Opraxit to craft customized digital marketing solutions tailored to your unique goals, setting you apart in the digital landscape.",
+      "Discover the power of strategic digital marketing with Amadeus Consultant. Our data-driven approach and creative expertise converge to amplify your online presence and drive tangible results. Trust Amadeus to craft customized digital marketing solutions tailored to your unique goals, setting you apart in the digital landscape.",
     image: (
-      <FontAwesomeIcon className="text-[#15B8AE] text-3xl" icon={faDatabase} />
+      <FontAwesomeIcon className="text-[#60a8f3] text-3xl" icon={faDatabase} />
     ),
   },
   {
@@ -63,7 +63,7 @@ const services: Service[] = [
       "Your Gateway to Talent Acquisition Excellence. Our dedicated team specializes in sourcing top-tier candidates tailored to your specific requirements. With a commitment to precision and personalized attention, we streamline the hiring process, ensuring optimal placements for mutual success.",
     image: (
       <FontAwesomeIcon
-        className="text-[#15B8AE] text-3xl"
+        className="text-[#60a8f3] text-3xl"
         icon={faHandshakeSimple}
       />
     ),
@@ -73,7 +73,7 @@ const services: Service[] = [
     description:
       "Elevating Your Hiring Process to New Heights. Our comprehensive support ensures you’re equipped with the tools and insights needed to conduct effective interviews. From crafting targeted questions to providing valuable feedback, we empower your team to make informed hiring decisions and secure the best talent for your organization.",
     image: (
-      <FontAwesomeIcon className="text-[#15B8AE] text-3xl" icon={faHeadset} />
+      <FontAwesomeIcon className="text-[#60a8f3] text-3xl" icon={faHeadset} />
     ),
   },
 ];
@@ -82,46 +82,46 @@ const whyChooseUsFeatures = [
   {
     icon: (
       <FontAwesomeIcon
-        className="bg=[#15B8AE] text-white rounded-full text-3xl"
+        className="bg=[#60a8f3] text-white rounded-full text-3xl"
         icon={faUsersLine}
       />
     ),
     title: "The Best Hiring Agency Service",
     description:
-      "Elevate your workforce with the unparalleled excellence of Oprax IT Services, the best hiring agency service.",
+      "Elevate your workforce with the unparalleled excellence of Amadeus Consultant, the best hiring agency service.",
   },
   {
     icon: (
       <FontAwesomeIcon
-        className="bg=[#15B8AE] text-white rounded-full text-3xl"
+        className="bg=[#60a8f3] text-white rounded-full text-3xl"
         icon={faChartLine}
       />
     ),
     title: "Premier Client Engagement",
     description:
-      "Oprax IT Services ensures premier client engagement, delivering tailored solutions to meet your staffing needs with exceptional precision and effectiveness.",
+      "Amadeus Consultant ensures premier client engagement, delivering tailored solutions to meet your staffing needs with exceptional precision and effectiveness.",
   },
   {
     icon: (
       <FontAwesomeIcon
-        className="bg=[#15B8AE] text-white rounded-full text-3xl"
+        className="bg=[#60a8f3] text-white rounded-full text-3xl"
         icon={faMagnifyingGlass}
       />
     ),
     title: "Pinnacle Market Research",
     description:
-      "Elevate your workforce with the unparalleled excellence of Oprax IT Services, delivering tailored solutions crafted for the unique dynamics of the USA market.",
+      "Elevate your workforce with the unparalleled excellence of Amadeus Consultant, delivering tailored solutions crafted for the unique dynamics of the USA market.",
   },
   {
     icon: (
       <FontAwesomeIcon
-        className="bg=[#15B8AE] text-white rounded-full text-3xl"
+        className="bg=[#60a8f3] text-white rounded-full text-3xl"
         icon={faHandshake}
       />
     ),
     title: "Give The Best Treatment to Worker",
     description:
-      "At Oprax IT Services, our prime feedback Management ensures continuous improvement by harnessing valuable insights, fostering a responsive and client-centric approach to exceed your expectations.",
+      "At Amadeus Consultant, our prime feedback Management ensures continuous improvement by harnessing valuable insights, fostering a responsive and client-centric approach to exceed your expectations.",
   },
 ];
 
@@ -143,17 +143,17 @@ export default function Services() {
           <div className="flex items-center justify-center space-x-2 text-lg">
             <Link
               href="/"
-              className="text-white font-normal hover:text-[#15B8AE]"
+              className="text-white font-normal hover:text-[#60a8f3]"
             >
               Home
             </Link>
             <FontAwesomeIcon
-              className="text-[#15B8AE] text-sm font-semibold"
+              className="text-[#60a8f3] text-sm font-semibold"
               icon={faCircleChevronRight}
             />
             <Link
               href="/services"
-              className="text-white font-normal hover:text-[#15B8AE]"
+              className="text-white font-normal hover:text-[#60a8f3]"
             >
               Services
             </Link>
@@ -165,7 +165,7 @@ export default function Services() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-xl font-semibold text-[#15B8AE] mb-2">
+            <h2 className="text-xl font-semibold text-[#60a8f3] mb-2">
               Our Service
             </h2>
             <h3 className="text-5xl font-bold text-black mb-4">
@@ -198,13 +198,13 @@ export default function Services() {
         className="text-white relative overflow-hidden"
         style={{
           backgroundImage:
-            "radial-gradient(at bottom right, #15B8AE 0%, #15B8AE00 37%)",
+            "radial-gradient(at bottom right, #60a8f3 0%, #60a8f300 37%)",
         }}
       >
-        <div className="w-full lg:w-2/3 p-10 lg:p-20">
+        <div className="w-full lg:w-2/3 p-10 lg:p-20 bg-black">
           <div className="container mx-auto">
             <div className="mb-16">
-              <h2 className="text-lg text-[#15B8AE] font-semibold mb-3">
+              <h2 className="text-lg text-[#60a8f3] font-semibold mb-3">
                 Why Choose Us
               </h2>
               <h3 className="text-4xl font-bold max-w-2xl">
@@ -223,7 +223,7 @@ export default function Services() {
                   className="flex items-start gap-6"
                 >
                   <div className="flex flex-col gap-5">
-                    <div className="flex-shrink-0 w-16 h-16 bg-[#15B8AE] rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-16 h-16 bg-[#60a8f3] rounded-full flex items-center justify-center">
                       {feature.icon}
                     </div>
                     <h4 className="text-3xl font-bold">{feature.title}</h4>

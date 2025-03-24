@@ -25,7 +25,7 @@ export default function ContactUs() {
         <div className="absolute inset-0 z-0 opacity-30">
           <Image
             src="/images/contact-us/hero-bg.jpg"
-            alt="Contact Oprax IT Services"
+            alt="Contact Amadeus Consultant"
             fill
             style={{ objectFit: "cover" }}
           />
@@ -35,17 +35,17 @@ export default function ContactUs() {
           <div className="flex items-center justify-center space-x-2 text-lg">
             <Link
               href="/"
-              className="text-white font-normal hover:text-[#15B8AE]"
+              className="text-white font-normal hover:text-[#60a8f3]"
             >
               Home
             </Link>
             <FontAwesomeIcon
-              className="text-[#15B8AE] text-sm font-semibold"
+              className="text-[#60a8f3] text-sm font-semibold"
               icon={faCircleChevronRight}
             />
             <Link
               href="/contact-us"
-              className="text-white font-normal hover:text-[#15B8AE]"
+              className="text-white font-normal hover:text-[#60a8f3]"
             >
               Contact Us
             </Link>
@@ -61,7 +61,7 @@ export default function ContactUs() {
               <ContactForm />
             </div>
             <div className="lg:w-1/2 p-6 md:ml-14">
-              <h4 className="text-xl font-semibold text-[#15B8AE] mb-6">
+              <h4 className="text-xl font-semibold text-[#60a8f3] mb-6">
                 Contact Us
               </h4>
               <h2 className="text-4xl font-bold text-black mb-6">
@@ -71,7 +71,7 @@ export default function ContactUs() {
                 Have questions or inquiries? Fill out our
                 <Link
                   href="/contact-us"
-                  className="font-normal text-[#15B8AE] hover:text-black"
+                  className="font-normal text-[#60a8f3] hover:text-black"
                 >
                   {" contact form "}
                 </Link>
@@ -79,14 +79,14 @@ export default function ContactUs() {
                 hours during business days. At{" "}
                 <Link
                   href="/"
-                  className="font-normal text-[#15B8AE] hover:text-black"
+                  className="font-normal text-[#60a8f3] hover:text-black"
                 >
-                  {" OpraxIT Services "}
+                  {" Amadeus Consultant "}
                 </Link>
                 , we specialize in
                 <Link
                   href="/about-us"
-                  className="font-normal text-[#15B8AE] hover:text-black"
+                  className="font-normal text-[#60a8f3] hover:text-black"
                 >
                   {" staffing and recruiting solutions "}
                 </Link>
@@ -98,7 +98,7 @@ export default function ContactUs() {
                 <div className="flex w-full gap-4">
                   <div className="w-[70px] h-[70px]">
                     <FontAwesomeIcon
-                      className="text-4xl p-4 text-white bg-[#15B8AE]"
+                      className="text-4xl p-4 text-white bg-[#60a8f3]"
                       icon={faBuilding}
                     />
                   </div>
@@ -115,7 +115,7 @@ export default function ContactUs() {
                 <div className="flex w-full gap-4">
                   <div className="w-[70px] h-[70px]">
                     <FontAwesomeIcon
-                      className="text-4xl p-4 text-white bg-[#15B8AE]"
+                      className="text-4xl p-4 text-white bg-[#60a8f3]"
                       icon={faPhoneVolume}
                     />
                   </div>
@@ -137,7 +137,7 @@ export default function ContactUs() {
                 <div className="flex w-full gap-4">
                   <div className="w-[70px] h-[70px]">
                     <FontAwesomeIcon
-                      className="text-4xl p-4 text-white bg-[#15B8AE]"
+                      className="text-4xl p-4 text-white bg-[#60a8f3]"
                       icon={faEnvelope}
                     />
                   </div>
@@ -147,10 +147,10 @@ export default function ContactUs() {
                     </h3>
                     <p className="text-gray-600 ">
                       <a
-                        href="mailto:info@opraxitservices.com"
+                        href="mailto:info@amadeusconsultant.com"
                         className="hover:text-blue-600 transition duration-300"
                       >
-                        info@opraxitservices.com
+                        info@amadeusconsultant.com
                       </a>
                     </p>
                   </div>
@@ -163,10 +163,10 @@ export default function ContactUs() {
                 </h4>
                 <div className="flex my-3 items-start gap-2">
                   <FontAwesomeIcon
-                    className="h-full my-auto text-[#15B8AE] text-sm"
+                    className="h-full my-auto text-[#60a8f3] text-sm"
                     icon={faClock}
                   />
-                  <p className="text-gray-500 font-light hover:text-[#15B8AE] duration-300">
+                  <p className="text-gray-500 font-light hover:text-[#60a8f3] duration-300">
                     Mon - Fri : 9:00 A.M. - 5:00 P.M.
                   </p>
                 </div>

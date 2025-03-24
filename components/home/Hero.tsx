@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-bg.jpg"
-          alt="Oprax IT Services"
+          alt="Amadeus Consultant"
           fill
           style={{ objectFit: "cover" }}
           priority

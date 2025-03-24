@@ -11,7 +11,7 @@ import { Karla } from "next/font/google";
 const karla = Karla({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Oprax IT Services - Innovative Technology Solutions",
+  title: "Amadeus Consultant - Innovative Technology Solutions",
   description:
     "We provide innovative IT solutions to help businesses grow and succeed in the digital age.",
 };

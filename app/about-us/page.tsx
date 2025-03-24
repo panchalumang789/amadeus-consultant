@@ -15,7 +15,7 @@ export default function AboutUs() {
         <div className="absolute inset-0 z-0 opacity-30">
           <Image
             src="/images/about-us/hero-bg.jpg"
-            alt="About Oprax IT Services"
+            alt="About Amadeus Consultant"
             fill
             style={{ objectFit: "cover" }}
           />
@@ -25,17 +25,17 @@ export default function AboutUs() {
           <div className="flex items-center justify-center space-x-2 text-lg">
             <Link
               href="/"
-              className="text-white font-normal hover:text-[#15B8AE]"
+              className="text-white font-normal hover:text-[#60a8f3]"
             >
               Home
             </Link>
             <FontAwesomeIcon
-              className="text-[#15B8AE] text-sm font-semibold"
+              className="text-[#60a8f3] text-sm font-semibold"
               icon={faCircleChevronRight}
             />
             <Link
               href="/about-us"
-              className="text-white font-normal hover:text-[#15B8AE]"
+              className="text-white font-normal hover:text-[#60a8f3]"
             >
               About Us
             </Link>
@@ -57,15 +57,15 @@ export default function AboutUs() {
               />
             </div>
             <div>
-              <span className="text-[#15B8AE] text-xl font-semibold tracking-wider mb-2 block">
+              <span className="text-[#60a8f3] text-xl font-semibold tracking-wider mb-2 block">
                 Unveiling Our Essence
               </span>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Welcome to Oprax IT Services
+                Welcome to Amadeus Consultant
               </h2>
               <div className="space-y-4 text-lg font-medium text-gray-600">
                 <p>
-                  At Oprax IT Services, we specialize in providing top-notch IT
+                  At Amadeus Consultant, we specialize in providing top-notch IT
                   recruitment and staffing solutions tailored to meet the
                   dynamic needs of today’s businesses. With a relentless focus
                   on excellence and a commitment to customer satisfaction, we
@@ -91,23 +91,78 @@ export default function AboutUs() {
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center text-gray-900 mb-12">
-            Our Leaders
+            Core Values
           </h2>
-          <div className="flex justify-center">
-            <div className="text-center">
-              <div className="relative w-[250px] h-[300px] mx-auto mb-6">
-                <Image
-                  src="/images/about-us/founder.jpg"
-                  alt="Co-Founder"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  className="rounded-4xl"
-                />
-              </div>
+          <div className="flex flex-col xl:flex-row justify-center">
+            <div className="relative flex flex-col items-center justify-center w-[250px] h-[300px] mx-auto">
+              <Image
+                src="/images/about-us/service-1-icon-1.jpg"
+                alt="Co-Founder"
+                height={90}
+                width={90}
+                style={{ objectFit: "cover" }}
+                className="rounded-md"
+              />
               <h3 className="text-2xl font-bold text-gray-900 mb-1">
-                Co-Founder
+                Excellence
               </h3>
-              <p className="text-gray-600">Aryan Pandey</p>
+              <p className="text-gray-600">
+                Quality of work does not stop at competence but goes beyond
+                clients’ expectations.
+              </p>
+            </div>
+            <div className="relative flex flex-col items-center justify-center w-[250px] h-[300px] mx-auto">
+              <Image
+                src="/images/about-us/service-1-icon-1.jpg"
+                alt="Co-Founder"
+                height={90}
+                width={90}
+                style={{ objectFit: "cover" }}
+                className="rounded-md"
+              />
+              <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                Commitment
+              </h3>
+              <p className="text-gray-600">
+                The dedication of our team extends beyond the good of the
+                company, to the betterment and success of our clients by
+                allocating the required resources and training to exceed your
+                goals.
+              </p>
+            </div>
+            <div className="relative flex flex-col items-center justify-center w-[250px] h-[300px] mx-auto">
+              <Image
+                src="/images/about-us/service-1-icon-1.jpg"
+                alt="Co-Founder"
+                height={90}
+                width={90}
+                style={{ objectFit: "cover" }}
+                className="rounded-md"
+              />
+              <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                Integrity
+              </h3>
+              <p className="text-gray-600">
+                Winaxis only believes in doing work the right way with the right
+                attitude and motivation.
+              </p>
+            </div>
+            <div className="relative flex flex-col items-center justify-center w-[250px] h-[300px] mx-auto">
+              <Image
+                src="/images/about-us/service-1-icon-1.jpg"
+                alt="Co-Founder"
+                height={90}
+                width={90}
+                style={{ objectFit: "cover" }}
+                className="rounded-md"
+              />
+              <h3 className="text-2xl font-bold text-gray-900 mb-1">
+                Innovation
+              </h3>
+              <p className="text-gray-600">
+                The call center industry is fast-paced and ever-changing. With
+                Winaxis, you are assured that you are never left behind.
+              </p>
             </div>
           </div>
         </div>
@@ -121,12 +176,12 @@ export default function AboutUs() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-gray-600 text-center md:text-left">
               Are you seeking employment? Contact us now for guaranteed
-              placement with Oprax IT Services.
+              placement with Amadeus Consultant.
             </p>
             <div className="flex flex-row items-center gap-12">
               <Link
                 href="/contact-us"
-                className="bg-[#15B8AE] text-white px-5 xl:px-10 py-3 xl:py-5 text-[16px] font-medium hover:scale-90 duration-500"
+                className="bg-[#60a8f3] text-white px-5 xl:px-10 py-3 xl:py-5 text-[16px] font-medium hover:scale-90 duration-500"
               >
                 Search a Job
               </Link>
@@ -135,7 +190,7 @@ export default function AboutUs() {
                 className="flex items-center gap-3 text-black transition duration-300"
               >
                 <FontAwesomeIcon
-                  className="p-4 text-xl bg-black text-white rounded-full"
+                  className="p-4 text-xl bg-[#60a8f3] text-white rounded-full"
                   icon={faPhone}
                 />
                 <span className="font-medium">(217) 335-6775</span>

@@ -6,37 +6,37 @@ import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 const testimonials = [
   {
-    text: "Oprax IT Services played a pivotal role in helping me secure my dream IT job. Their marketing expertise and dedicated support were outstanding. They provided personalized guidance and prepared me thoroughly for interviews, making my job search efficient and successful. I highly recommend their services to anyone seeking to advance their IT career",
+    text: "Amadeus Consultant played a pivotal role in helping me secure my dream IT job. Their marketing expertise and dedicated support were outstanding. They provided personalized guidance and prepared me thoroughly for interviews, making my job search efficient and successful. I highly recommend their services to anyone seeking to advance their IT career",
     name: "Shreyas",
     role: "Candidate",
   },
   {
-    text: "I had a great experience working with Oprax. The team is professional, and dedicated, and delivers exceptional results. Highly recommended!",
+    text: "I had a great experience working with Amadeus. The team is professional, and dedicated, and delivers exceptional results. Highly recommended!",
     name: "Jacob",
     role: "Client",
   },
   {
-    text: "I can't speak highly enough of Oprax IT Services! From the moment we reached out to them for assistance with our company's IT needs, they provided exemplary service that exceeded all expectations.",
+    text: "I can't speak highly enough of Amadeus Consultant! From the moment we reached out to them for assistance with our company's IT needs, they provided exemplary service that exceeded all expectations.",
     name: "Priyanka",
     role: "Candidate",
   },
   {
-    text: "Clients consistently praise Oprax IT Services for their prompt and reliable support. The team is known for its quick response times and proactive approach to addressing issues, ensuring minimal downtime and maximum satisfaction.",
+    text: "Clients consistently praise Amadeus Consultant for their prompt and reliable support. The team is known for its quick response times and proactive approach to addressing issues, ensuring minimal downtime and maximum satisfaction.",
     name: "Erick",
     role: "Candidate",
   },
   {
-    text: "Oprax IT Services excels in delivering high-quality work. Their technical proficiency is evident in the robust, scalable solutions they developed for us. The implementation was flawless, and we experienced minimal downtime, which is crucial for our operations. They also went above and beyond to provide comprehensive training and support, ensuring that our team could fully leverage the new systems.",
+    text: "Amadeus Consultant excels in delivering high-quality work. Their technical proficiency is evident in the robust, scalable solutions they developed for us. The implementation was flawless, and we experienced minimal downtime, which is crucial for our operations. They also went above and beyond to provide comprehensive training and support, ensuring that our team could fully leverage the new systems.",
     name: "Gourav",
     role: "Candidate",
   },
   {
-    text: "Oprax IT Services stands out for its innovative approach to solving complex business challenges. By leveraging the latest technologies and industry best practices, they deliver forward-thinking solutions that drive efficiency, productivity, and growth.",
+    text: "Amadeus Consultant stands out for its innovative approach to solving complex business challenges. By leveraging the latest technologies and industry best practices, they deliver forward-thinking solutions that drive efficiency, productivity, and growth.",
     name: "Aron",
     role: "Candidate",
   },
   {
-    text: "What sets Oprax IT Services apart is their commitment to customer satisfaction. They took the time to understand our unique challenges and provided insightful recommendations that have significantly improved our efficiency and productivity. Their innovative approach and attention to detail have truly transformed our IT infrastructure.",
+    text: "What sets Amadeus Consultant apart is their commitment to customer satisfaction. They took the time to understand our unique challenges and provided insightful recommendations that have significantly improved our efficiency and productivity. Their innovative approach and attention to detail have truly transformed our IT infrastructure.",
     name: "Krishan",
     role: "Candidate",
   },
@@ -118,7 +118,7 @@ export default function TestimonialsSection() {
               {getCurrentTestimonials().map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-[#15B8AE] p-8 rounded-2xl border border-[#2A2F3D] hover:border-[#00D2C7] transition-all duration-300"
+                  className="bg-[#60a8f3] p-8 rounded-2xl border border-[#2A2F3D] hover:border-[#00D2C7] transition-all duration-300"
                   onMouseEnter={() => setIsAutoPlaying(false)}
                   onMouseLeave={() => setIsAutoPlaying(true)}
                 >

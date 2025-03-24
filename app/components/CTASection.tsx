@@ -30,7 +30,7 @@ function CTASection() {
             </h2>
             <Link
               href="/contact"
-              className="inline-block bg-[#00D2C7] hover:-translate-y-2 duration-300 text-white px-10 py-4 font-extrabold rounded-xs hover:bg-opacity-90 transition"
+              className="inline-block bg-[#60a8f3] hover:-translate-y-2 duration-300 text-white px-10 py-4 font-extrabold rounded-xs hover:bg-opacity-90 transition"
             >
               Contact Us
             </Link>
