@@ -93,8 +93,8 @@ export default function AboutUs() {
           <h2 className="text-5xl font-bold text-center text-gray-900 mb-12">
             Core Values
           </h2>
-          <div className="flex flex-col xl:flex-row justify-center">
-            <div className="relative flex flex-col items-center justify-center w-[250px] h-[300px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-14 justify-center">
+            <div className="relative flex flex-col items-center justify-center lg:justify-start gap-2 w-[300px] mx-auto">
               <Image
                 src="/images/about-us/service-1-icon-1.jpg"
                 alt="Co-Founder"
@@ -106,14 +106,14 @@ export default function AboutUs() {
               <h3 className="text-2xl font-bold text-gray-900 mb-1">
                 Excellence
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-center">
                 Quality of work does not stop at competence but goes beyond
                 clients’ expectations.
               </p>
             </div>
-            <div className="relative flex flex-col items-center justify-center w-[250px] h-[300px] mx-auto">
+            <div className="relative flex flex-col items-center justify-center lg:justify-start gap-2 w-[300px] mx-auto">
               <Image
-                src="/images/about-us/service-1-icon-1.jpg"
+                src="/images/about-us/service-1-icon-2.jpg"
                 alt="Co-Founder"
                 height={90}
                 width={90}
@@ -123,16 +123,16 @@ export default function AboutUs() {
               <h3 className="text-2xl font-bold text-gray-900 mb-1">
                 Commitment
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-center">
                 The dedication of our team extends beyond the good of the
                 company, to the betterment and success of our clients by
                 allocating the required resources and training to exceed your
                 goals.
               </p>
             </div>
-            <div className="relative flex flex-col items-center justify-center w-[250px] h-[300px] mx-auto">
+            <div className="relative flex flex-col items-center justify-center lg:justify-start gap-2 w-[300px] mx-auto">
               <Image
-                src="/images/about-us/service-1-icon-1.jpg"
+                src="/images/about-us/service-1-icon-3.jpg"
                 alt="Co-Founder"
                 height={90}
                 width={90}
@@ -142,14 +142,14 @@ export default function AboutUs() {
               <h3 className="text-2xl font-bold text-gray-900 mb-1">
                 Integrity
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-center">
                 Winaxis only believes in doing work the right way with the right
                 attitude and motivation.
               </p>
             </div>
-            <div className="relative flex flex-col items-center justify-center w-[250px] h-[300px] mx-auto">
+            <div className="relative flex flex-col items-center justify-center lg:justify-start gap-2 w-[300px] mx-auto">
               <Image
-                src="/images/about-us/service-1-icon-1.jpg"
+                src="/images/about-us/service-1-icon-4.jpg"
                 alt="Co-Founder"
                 height={90}
                 width={90}
@@ -159,7 +159,7 @@ export default function AboutUs() {
               <h3 className="text-2xl font-bold text-gray-900 mb-1">
                 Innovation
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-center">
                 The call center industry is fast-paced and ever-changing. With
                 Winaxis, you are assured that you are never left behind.
               </p>
