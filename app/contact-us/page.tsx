@@ -125,10 +125,10 @@ export default function ContactUs() {
                     </h3>
                     <p className="text-gray-600 ">
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+1(231) 771-1123"
                         className="hover:text-blue-600 transition duration-300"
                       >
-                        +1 (217) 335-6775
+                        +1(231) 771-1123
                       </a>
                     </p>
                   </div>

@@ -186,14 +186,14 @@ export default function AboutUs() {
                 Search a Job
               </Link>
               <a
-                href="tel:(217) 335-6775"
+                href="tel:+1(231) 771-1123"
                 className="flex items-center gap-3 text-black transition duration-300"
               >
                 <FontAwesomeIcon
                   className="p-4 text-xl bg-[#60a8f3] text-white rounded-full"
                   icon={faPhone}
                 />
-                <span className="font-medium">(217) 335-6775</span>
+                <span className="font-medium">+1(231) 771-1123</span>
               </a>
             </div>
           </div>

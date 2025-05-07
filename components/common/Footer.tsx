@@ -107,7 +107,7 @@ export default function Footer() {
               <div className="bg-[#60a8f3] hover:text-white p-3 rounded-xs mr-3">
                 <FontAwesomeIcon icon={faPhone} />
               </div>
-              <p className="hover:text-[#60a8f3]">+1 (217) 335-6775</p>
+              <p className="hover:text-[#60a8f3]">+1(231) 771-1123</p>
             </a>
             <a
               href="mailto:info@amadeusconsultant.com"
