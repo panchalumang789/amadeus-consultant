@@ -21,7 +21,7 @@ export default function ContactMap() {
   const mapInstanceRef = useRef<Map | null>(null);
 
   // Example coordinates - replace with your actual location
-  const position: [number, number] = [40.7128, -74.006]; // New York City coordinates
+  const position: [number, number] = [39.748427, -75.54772]; // New York City coordinates
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -56,15 +56,15 @@ export default function ContactMap() {
       <div className="absolute flex gap-6 bottom-4 left-4 text-black bg-white py-2 px-4 rounded-xs shadow-md z-[1000] max-w-xs">
         <div>
           <div className="flex items-center justify-between gap-2">
-            <h3 className="font-medium">6321 N Campbell Ave</h3>
+            <h3 className="font-medium">1007 N Orange St.</h3>
           </div>
           <p className="text-xs text-muted">
-            6321 N Campbell Ave, Chicago, IL
+            4th Floor Suite #4204 Wilmington, Delaware
             <br />
-            60659, USA
+            19801, USA
           </p>
           <Link
-            href="https://maps.google.com/maps?ll=41.997342,-87.68948&z=15&t=m&hl=en-US&gl=US&mapclient=embed&q=6321%20N%20Campbell%20Ave%20Chicago%2C%20IL%2060659%20USA"
+            href="https://www.google.com/maps/place/Orange+St,+Wilmington,+DE/@39.748427,-75.54772,405679m/data=!3m1!1e3!4m6!3m5!1s0x89c6fd41d1a737f9:0x3436f2a9a66570da!8m2!3d39.7439389!4d-75.5505349!16s%2Fg%2F1v_w39pt?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D"
             className="text-xs pt-2 text-muted text-[#1A73E8] hover:underline"
           >
             View larger map
@@ -73,7 +73,7 @@ export default function ContactMap() {
         <div className="flex items-center flex-col gap-1 text-[#1A73E8] hover:underline">
           <FontAwesomeIcon className="text-2xl" icon={faLocationArrow} />
           <Link
-            href="https://maps.google.com/maps/dir//6321+N+Campbell+Ave+Chicago,+IL+60659+USA/@41.9965392,-87.6919966,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x880fd1ddef595f8b:0xe7c4c65220f4ed8b"
+            href="https://www.google.com/maps/dir//Orange+St,+Wilmington,+DE,+USA/@39.748427,-75.54772,443378m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x89c6fd41d1a737f9:0x3436f2a9a66570da!2m2!1d-75.5505349!2d39.7439389?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D"
             className="text-xs"
           >
             Directions

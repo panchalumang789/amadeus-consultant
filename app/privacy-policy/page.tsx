@@ -155,7 +155,7 @@ export default function PrivacyPolicy() {
               please contact us at Amadeus Consultant LLC, Mr. Arjun Pandey,
               Email: info@amadeusconsultant.com,
               <br />
-              Phone: +1 217 335 6775.
+              Phone: +1(231) 771-1123.
             </p>
           </section>
         </div>

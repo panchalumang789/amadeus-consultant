@@ -107,7 +107,8 @@ export default function ContactUs() {
                       Office Location
                     </h3>
                     <p className="text-gray-600 ">
-                      6321 N. Campbell Ave Chicago IL 60659
+                      1007 N. Orange St. 4th Floor Suite #4204, Wilmington,
+                      Delaware 19801, United States
                     </p>
                   </div>
                 </div>
